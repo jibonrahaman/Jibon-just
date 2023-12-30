@@ -1,6 +1,7 @@
 import pp from '../assets/profile.png'
 import { RiFacebookFill } from "react-icons/ri";
-
+import { ImLinkedin2 } from "react-icons/im";
+import { CgMail } from "react-icons/cg";
 function Text() {
   return (
  
@@ -25,10 +26,11 @@ function Text() {
             </div>
           </div>
           </div>
-          <div className='flex gap-x-8'>
+          <div className='flex gap-x-5 mt-14 mb-20 justify-center  text-2xl'>
           <RiFacebookFill />
-
-          </div>
+          <ImLinkedin2 />
+          <CgMail className='mt-[1px]' />
+         </div>
       </section>
    
   )
