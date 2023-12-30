@@ -1,11 +1,11 @@
 
 function Profile() {
   return (
-    <div>
-      <h2>
-        hhddd
-      </h2>
-    </div>
+    <section>
+        <div className=" max-w-container mx-auto">
+ <p>dasa</p>
+        </div>
+    </section>
   )
 }
 
