@@ -9,7 +9,9 @@ function Navbar() {
                <Link to="/">
                <p>Home</p>
                </Link>
+                <Link to="/profile">
                 <p>About</p>
+                </Link>
             </div>
         </div>
     </section>
