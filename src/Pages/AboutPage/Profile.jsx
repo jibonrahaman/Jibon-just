@@ -2,7 +2,9 @@
 function Profile() {
   return (
     <div>
-      ss
+      <h2>
+        hhddd
+      </h2>
     </div>
   )
 }

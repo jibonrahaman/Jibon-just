@@ -12,14 +12,17 @@ import Profile from './Pages/AboutPage/Profile.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
    
-    <Route
+   <Route>
+     <Route
     path='/'
     element={<HomePage/>}
     />,
+    
     <Route
     path='/profile'
     element={<Profile/>}
     />
+   </Route>
       
   
      
