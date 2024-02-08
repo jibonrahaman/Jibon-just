@@ -33,7 +33,7 @@ import AA from '../../assets/AA.jpg'
 export default function Photos() {
   return (
   <section className=" flex justify-center bg-[#474777] "> 
- <div className=' relative  justify-evenly w-[80%] mt-20 group   gap-y-10  flex flex-wrap'>
+ <div className=' relative  justify-evenly w-[80%] mt-20 group   gap-y-10  flex flex-wrap' >
 
 <Images src={A} alt={A}  />
 <Images src={B} alt={B} />
