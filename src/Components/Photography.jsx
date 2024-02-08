@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom"
 
 function Photography() {
+  const navigate = useNavigate();
   const handleClick =()=>{
-    console.log("data");
+navigate("/photos")
   }
   return (
    <section className=" pb-20">

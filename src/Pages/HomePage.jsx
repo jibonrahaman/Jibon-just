@@ -10,7 +10,7 @@ export default function HomePage() {
         <span className=" font-bold">Hi, I’m Jibon :)  </span>
         I’m a web designer  and web application devloper. I foster innovative teams that create meaningful experiences. Below are some of the projects I worked on lately.
       </p>
-      <Photography />
+      <Photography/>
     </section>
   )
 }

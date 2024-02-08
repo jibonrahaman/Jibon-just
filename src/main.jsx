@@ -8,11 +8,13 @@ import {
 } from "react-router-dom";
 import HomePage from './Pages/HomePage.jsx';
 import Profile from './Pages/AboutPage/Profile.jsx';
+import Photos from './Pages/Photos/Photos.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
    
    <Route>
+
      <Route
     path='/'
     element={<HomePage/>}
@@ -22,7 +24,15 @@ const router = createBrowserRouter(
     path='/profile'
     element={<Profile/>}
     />
-   </Route>
+
+ <Route
+ path='/photos'
+ element={<Photos/>}
+ />
+
+   </Route>,
+
+  
       
   
      
