@@ -1,10 +1,15 @@
 import Navbar from "../Components/Navbar";
 import Photography from "../Components/Photography";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function HomePage() {
   return (
-    <section className="max-w-container mx-auto">
+    <section className="max-w-container mx-auto" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1000">
       <Navbar />
       <p className=" w-[1100px] text-center text-4xl mx-auto mt-14">
         <span className=" font-bold">Hi, I’m Jibon :)  </span>
