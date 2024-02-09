@@ -29,13 +29,11 @@ import AA from '../../../public/AA.jpg'
 import { IoReturnUpBackSharp } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-
+import BackToUp from '@uiw/react-back-to-top';
 
 export default function Photos() {
-
   const navigate = useNavigate();
   const [scroll, setScroll] = useState(false)
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -49,13 +47,14 @@ export default function Photos() {
       window.removeEventListener('scroll', handleScroll);
     }
   }, [])
-
   const handleBack = () => {
     navigate('/')
   }
 
   return (
     <section className=" flex justify-center bg-[#474777] ">
+       <BackToUp className=' text-4xl'>
+       </BackToUp>
       <div>
         <button onClick={handleBack} className={` mt-3 text-4xl  text-white fixed ${scroll && "px-3  bg-black border mt-8 text-white rounded-md hover:bg-transparent hover:scale-110 duration-500"}`}>
           <IoReturnUpBackSharp />
@@ -90,6 +89,6 @@ export default function Photos() {
         <Images src={Z} alt={Z} />
         <Images src={AA} alt={AA} />
       </div>
-    </section>
+     </section>
   )
 }
