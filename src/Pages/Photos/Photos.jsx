@@ -27,14 +27,16 @@ import Y from '../../../public/Y.jpg'
 import Z from '../../../public/Z.jpg'
 import AA from '../../../public/AA.jpg'
 import { IoReturnUpBackSharp } from "react-icons/io5";
+import { useEffect, useState } from 'react'
 
 export default function Photos() {
+
   return (
   <section className=" flex justify-center bg-[#474777] "> 
   <div>
-  <IoReturnUpBackSharp className=' mt-3 text-4xl text-white' />
+  <IoReturnUpBackSharp className=' mt-3 text-4xl  text-white fixed' />
   </div>
- <div className=' relative  justify-evenly w-[80%] mt-20 group   gap-y-10  flex flex-wrap' >
+ <div className=' relative ml-10  justify-evenly w-[80%] mt-20 group   gap-y-10  flex flex-wrap' >
 <Images src={A} alt={A}  />
 <Images src={B} alt={B} />
 <Images src={C} alt={C} />
