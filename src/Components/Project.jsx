@@ -16,24 +16,124 @@ function Project() {
                 <MixiButton text="DAYNAMIC" />
             </div>
 
-            <div className=" mt-5 w-full h-[450px] grid grid-cols-3 gap-x-8 ">
-              <div className="border h-full">
+            <div className=" mt-5    grid grid-cols-3 gap-x-8 ">
+       {/* card design */}
+ 
+            <div className="">
                 <img src={p1} alt="" />
-            <div className=" bg-[#d9eeff] px-4 pt-4 pb-6">
+            <div className=" bg-[#d9eeff] p-3 ">
            <h2 className=" text-xl font-semibold">ChitChat Chating App</h2> 
            <p className=" mt-3">On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.</p> 
            <p className=" items-center mt-3">Technology:
-            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">HTML5</button> 
-            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">CSS3</button> 
-            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">Js</button>
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">HTML5
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">CSS3
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">Js
+            </button>
             </p>  
             <div className=" flex gap-x-7 mt-6"> 
-            <button className=" px-3 py-1 bg-[#0171cd] rounded-md text-white border border-[#0171cd] hover:bg-transparent duration-300 hover:text-[#0171cd] font-semibold">LIVE</button>
-            <button className=" px-3 py-1 hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB</button>
-         </div>      
+            <button className=" px-3 py-1 bg-[#0171cd] rounded-md text-white border border-[#0171cd] hover:bg-transparent duration-300 hover:text-[#0171cd] font-semibold">LIVE
+            </button>
+            <button className=" px-3 py-1 hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB
+            </button>
+         </div>   
            </div>
-              </div>       
-               </div>
+              </div>
+    {/* card design */}   {/* card design */}
+ 
+            <div className="">
+                <img src={p1} alt="" />
+            <div className=" bg-[#d9eeff] p-3 ">
+           <h2 className=" text-xl font-semibold">ChitChat Chating App</h2> 
+           <p className=" mt-3">On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.</p> 
+           <p className=" items-center mt-3">Technology:
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">HTML5
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">CSS3
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">Js
+            </button>
+            </p>  
+            <div className=" flex gap-x-7 mt-6"> 
+            <button className=" px-3 py-1 bg-[#0171cd] rounded-md text-white border border-[#0171cd] hover:bg-transparent duration-300 hover:text-[#0171cd] font-semibold">LIVE
+            </button>
+            <button className=" px-3 py-1 hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB
+            </button>
+         </div>   
+           </div>
+              </div>
+    {/* card design */}   {/* card design */}
+ 
+            <div className="">
+                <img src={p1} alt="" />
+            <div className=" bg-[#d9eeff] p-3 ">
+           <h2 className=" text-xl font-semibold">ChitChat Chating App</h2> 
+           <p className=" mt-3">On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.</p> 
+           <p className=" items-center mt-3">Technology:
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">HTML5
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">CSS3
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">Js
+            </button>
+            </p>  
+            <div className=" flex gap-x-7 mt-6"> 
+            <button className=" px-3 py-1 bg-[#0171cd] rounded-md text-white border border-[#0171cd] hover:bg-transparent duration-300 hover:text-[#0171cd] font-semibold">LIVE
+            </button>
+            <button className=" px-3 py-1 hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB
+            </button>
+         </div>   
+           </div>
+              </div>
+    {/* card design */}   {/* card design */}
+ 
+            <div className="">
+                <img src={p1} alt="" />
+            <div className=" bg-[#d9eeff] p-3 ">
+           <h2 className=" text-xl font-semibold">ChitChat Chating App</h2> 
+           <p className=" mt-3">On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.</p> 
+           <p className=" items-center mt-3">Technology:
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">HTML5
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">CSS3
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">Js
+            </button>
+            </p>  
+            <div className=" flex gap-x-7 mt-6"> 
+            <button className=" px-3 py-1 bg-[#0171cd] rounded-md text-white border border-[#0171cd] hover:bg-transparent duration-300 hover:text-[#0171cd] font-semibold">LIVE
+            </button>
+            <button className=" px-3 py-1 hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB
+            </button>
+         </div>   
+           </div>
+              </div>
+    {/* card design */}   {/* card design */}
+ 
+            <div className="">
+                <img src={p1} alt="" />
+            <div className=" bg-[#d9eeff] p-3 ">
+           <h2 className=" text-xl font-semibold">ChitChat Chating App</h2> 
+           <p className=" mt-3">On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.</p> 
+           <p className=" items-center mt-3">Technology:
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">HTML5
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">CSS3
+            </button> 
+            <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">Js
+            </button>
+            </p>  
+            <div className=" flex gap-x-7 mt-6"> 
+            <button className=" px-3 py-1 bg-[#0171cd] rounded-md text-white border border-[#0171cd] hover:bg-transparent duration-300 hover:text-[#0171cd] font-semibold">LIVE
+            </button>
+            <button className=" px-3 py-1 hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB
+            </button>
+         </div>   
+           </div>
+              </div>
+    {/* card design */}
+           </div>             
                  </section>
     )
 }
