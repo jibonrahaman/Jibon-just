@@ -5,7 +5,7 @@ function Project() {
   <section className=" max-w-container mx-auto">
     <Navbar/>
     <div className=" flex gap-x-9">
-        <button>ALL</button>
+        <button className="px-4 py-1 rounded-md hover:bg-[#2b4b65] bg-[#0171cd] text-white">ALL</button>
         <button>REACT JS</button>
         <button>TAILWIND</button>
         <button>BOOTSTRAP</button>
