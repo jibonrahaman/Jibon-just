@@ -9,6 +9,7 @@ import {
 import HomePage from './Pages/HomePage.jsx';
 import Profile from './Pages/AboutPage/Profile.jsx';
 import Photos from './Pages/Photos/Photos.jsx';
+import Project from './Components/Project.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +31,10 @@ const router = createBrowserRouter(
  element={<Photos/>}
  />
 
+<Route 
+path='/project'
+element ={<Project/>}
+/>
    </Route>,
 
   
