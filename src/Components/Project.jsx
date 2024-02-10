@@ -43,13 +43,14 @@ function Project() {
                 <div className="p-6 bg-[#d9eeff]">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.webName}</h2>
                     <p className="text-gray-600 mb-4">{item.paragraph}</p>
-                    <div className="flex flex-wrap gap-x-3 gap-y-3 mb-4">
-                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.html}</button>
-                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.css}</button>
-                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.js}</button>
-                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.react}</button>
-                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.tailwind}</button>
-                    </div>
+                    <div className=" items-center mb-3">Technology:
+                <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.html}</button> 
+                <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.css}</button> 
+                <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.js}</button> 
+                <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.react}</button>
+                <button className="px-3 mt-2  cursor-pointer bg-white text-black ml-3 rounded-md">{item.tailwind}</button>
+                </div>  
+
                     <div className="flex justify-center gap-x-6">
                         <button className="px-3 py-1 bg-blue-400 hover:scale-105 text-white rounded-md hover:bg-blue-600 duration-300 font-semibold ">LIVE</button>
                         <button className="px-3 py-1 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-400 duration-300 font-semibold hover:scale-105">GITHUB</button>
