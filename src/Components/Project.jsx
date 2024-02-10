@@ -34,37 +34,33 @@ function Project() {
                 <MixiButton onclick={()=>handleSubmit("DAYNAMIC")} text="DAYNAMIC" />
             </div>
 
-            <div className=" mt-5    grid grid-cols-3 gap-x-8 ">
-       {/* card design */}
- 
-            {
-                filterProtfolio.map((item,id)=>{
-                   return <div key={id} className=" px-4">
-               <div className=" overflow-hidden">
-               <img src={item.imgs} alt="" className=" overflow-hidden hover:scale-110 duration-500"/>
-               </div>
-                <div className=" bg-[#d9eeff] p-3 ">
-               <h2 className=" text-xl font-semibold">{item.webName}</h2> 
-               <p className=" mt-3">{item.paragraph}</p> 
-               <p className=" items-center mt-3">Technology:
-                <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.html}</button> 
-                <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.css}</button> 
-                <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.js}</button> 
-                <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.react}</button>
-                <button className="px-3 mt-2  cursor-pointer bg-white text-black ml-3 rounded-md">{item.tailwind}</button>
-                </p>  
-                <div className=" flex gap-x-7 mt-6 mb-5"> 
-                <button className=" px-3 py-1 bg-[#0171cd] rounded-md text-white border border-[#0171cd] hover:bg-transparent duration-300 hover:text-[#0171cd] font-semibold">LIVE
-                </button>
-                <button className=" px-3 py-1  hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB
-                </button>
-             </div>   
-               </div>
-                  </div>
-                })
-            }
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {/* card design */}
-           </div>             
+    {filterProtfolio.map((item, id) => {
+        return (
+            <div key={id} className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src={item.imgs} alt={item.webName} className="w-full h-40 hover:scale-105 duration-500 object-cover object-center" />
+                <div className="p-6 bg-[#d9eeff]">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.webName}</h2>
+                    <p className="text-gray-600 mb-4">{item.paragraph}</p>
+                    <div className="flex flex-wrap gap-x-3 gap-y-3 mb-4">
+                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.html}</button>
+                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.css}</button>
+                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.js}</button>
+                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.react}</button>
+                        <button className="px-3 py-1 bg-white text-black rounded-md">{item.tailwind}</button>
+                    </div>
+                    <div className="flex gap-x-3">
+                        <button className="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 duration-300 font-semibold">LIVE</button>
+                        <button className="px-3 py-1 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 duration-300 font-semibold">GITHUB</button>
+                    </div>
+                </div>
+            </div>
+        );
+    })}
+    {/* card design */}
+</div>
+           
                  </section>
     )
 }
