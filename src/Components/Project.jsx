@@ -39,8 +39,10 @@ function Project() {
  
             {
                 filterProtfolio.map((item,id)=>{
-                   return <div key={id} className=" overflow-hidden px-4">
-                    <img src={item.imgs} alt="" className=" hover:scale-110 duration-500"/>
+                   return <div key={id} className=" px-4">
+               <div className=" overflow-hidden">
+               <img src={item.imgs} alt="" className=" overflow-hidden hover:scale-110 duration-500"/>
+               </div>
                 <div className=" bg-[#d9eeff] p-3 ">
                <h2 className=" text-xl font-semibold">{item.webName}</h2> 
                <p className=" mt-3">{item.paragraph}</p> 
