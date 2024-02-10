@@ -39,8 +39,8 @@ function Project() {
  
             {
                 filterProtfolio.map((item,id)=>{
-                   return <div key={id}>
-                    <img src={item.imgs} alt="" />
+                   return <div key={id} className=" overflow-hidden px-4">
+                    <img src={item.imgs} alt="" className=" hover:scale-110 duration-500"/>
                 <div className=" bg-[#d9eeff] p-3 ">
                <h2 className=" text-xl font-semibold">{item.webName}</h2> 
                <p className=" mt-3">{item.paragraph}</p> 
@@ -51,10 +51,10 @@ function Project() {
                 <button className="px-3  cursor-pointer bg-white text-black ml-3 rounded-md">{item.react}</button>
                 <button className="px-3 mt-2  cursor-pointer bg-white text-black ml-3 rounded-md">{item.tailwind}</button>
                 </p>  
-                <div className=" flex gap-x-7 mt-6"> 
+                <div className=" flex gap-x-7 mt-6 mb-5"> 
                 <button className=" px-3 py-1 bg-[#0171cd] rounded-md text-white border border-[#0171cd] hover:bg-transparent duration-300 hover:text-[#0171cd] font-semibold">LIVE
                 </button>
-                <button className=" px-3 py-1 hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB
+                <button className=" px-3 py-1  hover:bg-[#0171cd] rounded-md hover:text-white border border-[#0171cd] bg-transparent duration-300 text-[#0171cd]  font-semibold">GITHUB
                 </button>
              </div>   
                </div>
