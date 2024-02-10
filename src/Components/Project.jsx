@@ -39,7 +39,7 @@ function Project() {
     {filterProtfolio.map((item, id) => {
         return (
             <div key={id} className="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src={item.imgs} alt={item.webName} className="w-full h-40 hover:scale-105 duration-500 object-cover object-center" />
+                <img src={item.imgs} alt={item.webName} className="w-full h-[170px] hover:scale-105 duration-500 object-cover object-center" />
                 <div className="p-6 bg-[#d9eeff]">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.webName}</h2>
                     <p className="text-gray-600 mb-4">{item.paragraph}</p>
@@ -50,9 +50,9 @@ function Project() {
                         <button className="px-3 py-1 bg-white text-black rounded-md">{item.react}</button>
                         <button className="px-3 py-1 bg-white text-black rounded-md">{item.tailwind}</button>
                     </div>
-                    <div className="flex gap-x-3">
-                        <button className="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 duration-300 font-semibold">LIVE</button>
-                        <button className="px-3 py-1 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 duration-300 font-semibold">GITHUB</button>
+                    <div className="flex justify-center gap-x-6">
+                        <button className="px-3 py-1 bg-blue-400 hover:scale-105 text-white rounded-md hover:bg-blue-600 duration-300 font-semibold ">LIVE</button>
+                        <button className="px-3 py-1 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-400 duration-300 font-semibold hover:scale-105">GITHUB</button>
                     </div>
                 </div>
             </div>
