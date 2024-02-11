@@ -94,6 +94,15 @@ const skill = [
       "css": "CSS3",
       "js": "JS",    
       "title": ["JAVASCRIPT"]
+    },{
+      "id": '10',
+      "imgs": "../../public/images/p10.png",
+      "webName": "Javascript Todo Complex",
+      "paragraph": "On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.",
+      "html": "HTML5",
+      "css": "CSS3",
+      "js": "JS",    
+      "title": ["JAVASCRIPT"]
     }, 
   ];
   
