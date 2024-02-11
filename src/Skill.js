@@ -84,6 +84,16 @@ const skill = [
       "react": "REACT",
       "tailwind": "TAILWIND",
       "title": ["TAILWIND", "REACT JS", "DAYNAMIC"]
+    },
+      {
+      "id": '9',
+      "imgs": "../../public/images/p9.png",
+      "webName": "Javascript Todo",
+      "paragraph": "On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.",
+      "html": "HTML5",
+      "css": "CSS3",
+      "js": "JS",    
+      "title": ["JAVASCRIPT"]
     }, 
   ];
   
