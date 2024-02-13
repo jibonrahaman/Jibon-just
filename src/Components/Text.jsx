@@ -9,9 +9,9 @@ function Text() {
          <div className=" flex gap-x-3 justify-between md:mt-16">
           <img src={pp} alt={pp} className="w-[150px] h-[150px] md:w-[40%] md:h-[500px] object-cover md:mt-10" />
           <div></div>
-          <div className="md:w-[550px] text-[12px] md:text-xl md:flex md:flex-col  md:gap-y-10 ">
+          <div className="md:w-[550px] text-[14px] md:text-xl md:flex md:flex-col  md:gap-y-10 ">
             <h2 className="font-bold text-xl  md:text-3xl">Hi, I’m Shahriar Fardous :)</h2>
-            <p className="mt-2 md:mt-0 ">I am a multi-disciplinary design and product leader with more than 15 year`s experience creating digital and physical products. A wannabe artist and occasional entrepreneur</p>
+            <p className="mt-4 md:mt-0 ">I am a multi-disciplinary design and product leader with more than 15 year`s experience creating digital and physical products. A wannabe artist and occasional entrepreneur</p>
             <p className="hidden md:block  ">I have lived and worked in Europe, the US and the Middle East which made me adaptable, accepting and culturally fluid. I thrive in fast-paced, open, transparent and trusting environments. I have over 13 year`s experience managing remote teams. I am an internationally acclaimed photographer and fashion designer in residence. I learn fast. I am ridiculously tall. I absolutely cannot draw.</p>
 
             <p className="hidden md:block ">These days I’m at WSC Sports, leading the Design organization which includes the Product Design, Visual & Brand Design and Motion Design teams.</p>
