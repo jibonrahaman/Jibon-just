@@ -5,13 +5,13 @@ import { CgMail } from "react-icons/cg";
 function Text() {
   return (
  
-      <section>
-         <div className=" flex justify-between mt-16">
-          <img src={pp} alt={pp} className=" w-[40%] h-[500px] object-cover mt-10" />
+      <section className='pl-1 md:pl-0'>
+         <div className=" flex gap-x-3 md:justify-between md:mt-16">
+          <img src={pp} alt={pp} className="w-[150px] h-[200px] md:w-[40%] md:h-[500px] object-cover mt-10" />
           <div></div>
-          <div className="w-[45%] ">
-            <div className=" w-[550px] text-xl flex flex-col  gap-y-10 ">
-            <h2 className=" font-bold text-3xl">Hi, I’m Shahriar Fardous :)</h2>
+          <div className="md:w-[45%] w-[200px] ">
+            <div className="text-[12px] md:w-[550px] md:text-xl flex flex-col  md:gap-y-10 ">
+            <h2 className="font-bold text-xl md:text-3xl">Hi, I’m Shahriar Fardous :)</h2>
             <p className=" ">I am a multi-disciplinary design and product leader with more than 15 year`s experience creating digital and physical products. A wannabe artist and occasional entrepreneur</p>
             <p>I have lived and worked in Europe, the US and the Middle East which made me adaptable, accepting and culturally fluid. I thrive in fast-paced, open, transparent and trusting environments. I have over 13 year`s experience managing remote teams. I am an internationally acclaimed photographer and fashion designer in residence. I learn fast. I am ridiculously tall. I absolutely cannot draw.</p>
 
@@ -26,7 +26,7 @@ function Text() {
             </div>
           </div>
           </div>
-          <div className='flex gap-x-5 mt-14 mb-20 justify-center  text-2xl'>
+          <div className='flex gap-x-5 my-5 md:mt-14 md:mb-20 justify-center  text-2xl'>
           <RiFacebookFill />
           <ImLinkedin2 />
           <CgMail className='mt-[1px]' />
