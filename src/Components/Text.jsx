@@ -5,7 +5,7 @@ import { CgMail } from "react-icons/cg";
 function Text() {
   return (
  
-      <section className='pl-1 md:pl-0'>
+      <section className='px-2 md:pl-0'>
          <div className=" flex gap-x-3 justify-between md:mt-16">
           <img src={pp} alt={pp} className="w-[150px] h-[150px] md:w-[40%] md:h-[500px] object-cover md:mt-10" />
           <div></div>
