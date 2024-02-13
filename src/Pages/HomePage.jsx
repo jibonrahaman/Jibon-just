@@ -7,7 +7,7 @@ AOS.init();
 
 export default function HomePage() {
   return (
-    <section className="max-w-container md:mx-auto" data-aos="fade-down"
+    <section className="max-w-container mx-auto" data-aos="fade-down"
     data-aos-easing="linear"
     data-aos-duration="1000">
       <Navbar />
