@@ -49,13 +49,13 @@ export default function Photos() {
     }
   }, [])
   const handleBack = () => {
-    navigate('/')
+    navigate('/')    
   }
 
   return (
     <section className=" flex md:justify-center  bg-[#474777] ">  
-    <div onClick={handleBack}>
-        <button  className={`cursor-pointer mt-10 text-2xl ml-2 md:ml-0  md:text-4xl  text-white fixed ${scroll && "md:px-3 px-2  bg-black border mt-14 text-white rounded-md hover:bg-transparent hover:scale-110 duration-500"}`}>
+    <div >
+        <button onClick={handleBack}  className={`cursor-pointer mt-10 text-2xl ml-2 md:ml-0  md:text-4xl z-20  text-white fixed ${scroll && "md:px-3 px-2  bg-black border mt-14 text-white rounded-md hover:bg-transparent hover:scale-110 duration-500"}`}>
           <IoReturnUpBackSharp />
         </button>
       </div>
