@@ -6,9 +6,11 @@ function Text() {
   return (
  
       <section className='px-2 md:pl-0'>
-         <div className=" flex gap-x-3 justify-between md:mt-16">
-          <img src={pp} alt={pp} className="w-[500px] h-[150px] md:w-[40%] md:h-[500px] object-cover md:mt-10" />
-          <div></div>
+         <div className=" flex gap-x-3 justify-between md:justify-evenly md:mt-16">
+         <div className='w-96 '>
+         <img src={pp} alt={pp} className="w-full " />
+         </div>
+          {/* <div></div> */}
           <div className="md:w-[550px] text-[14px] md:text-xl md:flex md:flex-col  md:gap-y-10 ">
             <h2 className="font-bold text-xl  md:text-3xl">Hi, I’m Shahriar Fardous :)</h2>
             <p className="mt-4 md:mt-0 ">I am a multi-disciplinary design and product leader with more than 15 year`s experience creating digital and physical products. A wannabe artist and occasional entrepreneur</p>
