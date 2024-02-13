@@ -53,13 +53,13 @@ export default function Photos() {
   }
 
   return (
-    <section className=" flex md:justify-center bg-[#474777] ">  
+    <section className=" flex md:justify-center  bg-[#474777] ">  
     <div onClick={handleBack}>
         <button  className={`cursor-pointer mt-3 text-xl ml-3 md:ml-0  md:text-4xl  text-white fixed ${scroll && "px-3  bg-black border mt-8 text-white rounded-md hover:bg-transparent hover:scale-110 duration-500"}`}>
           <IoReturnUpBackSharp />
         </button>
       </div>
-      <div className=' relative  ml-5 md:ml-10  justify-evenly  md:w-[60%] mt-20 group   gap-y-10  flex flex-wrap' >
+      <div className=' relative  ml-5 md:ml-10  justify-evenly  md:w-[60%] mt-20 group   gap-y-10  flex flex-wrap mb-5' >
         <Images src={A} alt={A} />
         <Images src={B} alt={B} />
         <Images src={C} alt={C} />
