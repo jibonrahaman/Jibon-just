@@ -59,7 +59,7 @@ export default function Photos() {
           <IoReturnUpBackSharp />
         </button>
       </div>
-      <div className=' relative px-4 md:px-0  ml-10  justify-evenly  md:w-[60%] mt-20 group   gap-y-10  flex flex-wrap' >
+      <div className=' relative  ml-5 md:ml-10  justify-evenly  md:w-[60%] mt-20 group   gap-y-10  flex flex-wrap' >
         <Images src={A} alt={A} />
         <Images src={B} alt={B} />
         <Images src={C} alt={C} />
