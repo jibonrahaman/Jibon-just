@@ -11,7 +11,7 @@ export default function HomePage() {
     data-aos-easing="linear"
     data-aos-duration="1000">
       <Navbar />
-      <p className=" px-1 mt-5  md:px-0 text-xl mt-0 md:w-[1100px] text-center md:text-4xl mx-auto md:mt-14">
+      <p className=" px-1 mt-5  md:px-0 text-xl  md:w-[1100px] text-center md:text-4xl mx-auto md:mt-14">
         <span className=" font-bold">Hi, I’m Jibon :)  </span>
         I’m a web designer  and web application devloper. I foster innovative teams that create meaningful experiences. Below are some of the projects I worked on lately.
       </p>
