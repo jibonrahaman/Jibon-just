@@ -6,7 +6,7 @@ function Photography() {
    navigate("/photos")
   }
   return (
-   <section className=" mt-7 md:pb-20 px-1  ">
+   <section className=" mt-14 md:pb-20 px-1  ">
     <div  className=" flex  justify-center mt-10 md:mt-20 ">
        <div onClick={handleClick} className="h-[200px] md:h-[350px] relative group ">
        <img src="https://images.squarespace-cdn.com/content/v1/5b5617b9697a9878c6351a85/1604434623934-V4M6DMF2VV5627U4RR9D/Pavel_Bolo_Photography.jpg?format=1000w" alt="" className=" h-full object-cover " /> 
