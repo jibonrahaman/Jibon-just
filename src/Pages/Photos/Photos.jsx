@@ -55,7 +55,7 @@ export default function Photos() {
   return (
     <section className=" flex md:justify-center  bg-[#474777] ">  
     <div onClick={handleBack}>
-        <button  className={`cursor-pointer mt-3 text-xl ml-3 md:ml-0  md:text-4xl  text-white fixed ${scroll && "px-3  bg-black border mt-8 text-white rounded-md hover:bg-transparent hover:scale-110 duration-500"}`}>
+        <button  className={`cursor-pointer mt-10 text-2xl ml-3 md:ml-0  md:text-4xl  text-white fixed ${scroll && "px-3  bg-black border mt-8 text-white rounded-md hover:bg-transparent hover:scale-110 duration-500"}`}>
           <IoReturnUpBackSharp />
         </button>
       </div>
