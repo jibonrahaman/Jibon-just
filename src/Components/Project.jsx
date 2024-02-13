@@ -1,17 +1,23 @@
 import MixiButton from "../Common/MixiButton"
 import Navbar from "./Navbar"
-import p1 from '../../public/images/p1.png'
 import { useState } from "react"
 import skill from "../Skill"
 import Btn from "../Common/Project_Common/Btn"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+import { useSpring, animated } from "react-spring";
 function Project() {
+    const [clicked, setClicked] = useState(false);
     const [data,setData]=useState(skill)
     const [filterProtfolio,setFilterProtfolio] = useState(skill)
-
+    const springProps = useSpring({
+        transform: clicked ? "scale(1.05)" : "scale(1)",
+    });
     const handleSubmit =(text)=>{
+        setClicked(!clicked)
         let arr = []
-        const filt = data.filter((item)=>{
+        data.filter((item)=>{
          item.title.filter((item2)=>{
             if(item2 == text){
               arr.push(item)
@@ -26,9 +32,10 @@ function Project() {
         <section className=" max-w-container mx-auto">
             <Navbar />
             <div className=" flex gap-x-7 ">
+            
                 <button onClick={()=>{setFilterProtfolio(skill)}} className="px-4 py-1 rounded-md hover:bg-[#2b4b65] bg-[#0171cd] text-white" >ALL</button>
 
-                <MixiButton onclick={()=>handleSubmit("REACT JS")}  text="REACT JS" />
+                <MixiButton onclick={()=>handleSubmit("REACT JS") }  text="REACT JS" />
                 <MixiButton onclick={()=>handleSubmit("TAILWIND")} text="TAILWIND" />
                 <MixiButton onclick={()=>handleSubmit("BOOTSTRAP")} text="BOOTSTRAP" />
              <MixiButton onclick={()=>handleSubmit("JAVASCRIPT")} text="JAVASCRIPT" />
@@ -39,7 +46,10 @@ function Project() {
     {/* card design */}
     {filterProtfolio.map((item, id) => {
         return (
-            <div key={id} className="bg-white shadow-lg rounded-lg overflow-hidden h-[450px]">
+         <div key={id}>
+               <animated.div
+            style={springProps}>
+             <div  data-aos="zoom-in"   data-aos-duration="500" className="bg-white shadow-lg rounded-lg overflow-hidden h-[450px]">
                 <img src={item.imgs} alt={item.webName}className="w-full h-[170px] hover:scale-105 duration-500 object-cover object-center" />
                 <div className="p-6 bg-[#d9eeff] h-full">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.webName}</h2>
@@ -58,6 +68,9 @@ function Project() {
                     </div>
                 </div>
             </div>
+        </animated.div>
+         </div>
+           
         );
     })}
     {/* card design */}
