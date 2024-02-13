@@ -53,14 +53,13 @@ export default function Photos() {
   }
 
   return (
-    <section className=" flex justify-center bg-[#474777] ">
-      
-      <div onClick={handleBack}>
-        <button  className={`cursor-pointer mt-3 text-4xl  text-white fixed ${scroll && "px-3  bg-black border mt-8 text-white rounded-md hover:bg-transparent hover:scale-110 duration-500"}`}>
+    <section className=" flex md:justify-center bg-[#474777] ">  
+    <div onClick={handleBack}>
+        <button  className={`cursor-pointer mt-3 text-xl ml-3 md:ml-0  md:text-4xl  text-white fixed ${scroll && "px-3  bg-black border mt-8 text-white rounded-md hover:bg-transparent hover:scale-110 duration-500"}`}>
           <IoReturnUpBackSharp />
         </button>
       </div>
-      <div className=' relative ml-10  justify-evenly w-[80%] mt-20 group   gap-y-10  flex flex-wrap' >
+      <div className=' relative px-4 md:px-0  ml-10  justify-evenly  md:w-[60%] mt-20 group   gap-y-10  flex flex-wrap' >
         <Images src={A} alt={A} />
         <Images src={B} alt={B} />
         <Images src={C} alt={C} />
@@ -89,6 +88,7 @@ export default function Photos() {
         <Images src={Z} alt={Z} />
         <Images src={AA} alt={AA} />
       </div>
+   
       <BackToUp >  
        <BsRocketFill className=' text-xl text-cyan-300' />
        </BackToUp>
