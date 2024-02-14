@@ -42,7 +42,7 @@ function Project() {
                 <MixiButton className="hidden md:block" onclick={()=>handleSubmit("DAYNAMIC")} text="DAYNAMIC" />
             </div>
 
-          <div className="mt-10 px-2 md:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mt-10 px-4 md:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {/* card design */}
     {filterProtfolio.map((item, id) => {
         return (
