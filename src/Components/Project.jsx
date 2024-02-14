@@ -46,30 +46,33 @@ function Project() {
     {/* card design */}
     {filterProtfolio.map((item, id) => {
         return (
-         <div key={id}>
-               <animated.div
-            style={springProps}>
-             <div  data-aos="zoom-in"   data-aos-duration="500" className="bg-white shadow-lg rounded-lg overflow-hidden h-[450px]">
-                <img src={item.imgs} alt={item.webName}className="w-full h-[170px] hover:scale-105 duration-500 object-cover object-center" />
-                <div className="p-6 bg-[#d9eeff] h-full">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.webName}</h2>
-           <p className="text-gray-600 mb-4">{item.paragraph}</p>
-                    <div className=" mb-3 flex flex-wrap gap-y-2">Technology :
-             {item.html &&   <Btn text={item.html}/>}
-             {item.css &&   <Btn text={item.css}/>}
-             {item.js &&   <Btn text={item.js}/>}
-             {item.react &&   <Btn text={item.react}/>}
-             {item.tailwind &&   <Btn text={item.tailwind}/>}
-             {item.redux &&   <Btn text={item.redux}/>}
-                </div>  
-                    <div className="flex justify-center gap-x-6">
-                        <button className="px-3 py-1 bg-blue-400 hover:scale-105 text-white rounded-md hover:bg-blue-600 duration-300 font-semibold ">LIVE</button>
-                        <button className="px-3 py-1 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-400 duration-300 font-semibold hover:scale-105">GITHUB</button>
-                    </div>
-                </div>
+            <div key={id}>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus repudiandae commodi voluptatem eligendi nihil velit aut ut unde sunt officiis quidem et consectetur, necessitatibus iure. Sequi suscipit iste earum!</p>
             </div>
-        </animated.div>
-         </div>
+        //  <div key={id}>
+        //        <animated.div
+        //     style={springProps}>
+        //      <div  data-aos="zoom-in"   data-aos-duration="500" className="bg-white shadow-lg rounded-lg overflow-hidden h-[450px]">
+        //         <img src={item.imgs} alt={item.webName}className="w-full h-[170px] hover:scale-105 duration-500 object-cover object-center" />
+        //         <div className="p-6 bg-[#d9eeff] h-full">
+        //             <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.webName}</h2>
+        //    <p className="text-gray-600 mb-4">{item.paragraph}</p>
+        //             <div className=" mb-3 flex flex-wrap gap-y-2">Technology :
+        //      {item.html &&   <Btn text={item.html}/>}
+        //      {item.css &&   <Btn text={item.css}/>}
+        //      {item.js &&   <Btn text={item.js}/>}
+        //      {item.react &&   <Btn text={item.react}/>}
+        //      {item.tailwind &&   <Btn text={item.tailwind}/>}
+        //      {item.redux &&   <Btn text={item.redux}/>}
+        //         </div>  
+        //             <div className="flex justify-center gap-x-6">
+        //                 <button className="px-3 py-1 bg-blue-400 hover:scale-105 text-white rounded-md hover:bg-blue-600 duration-300 font-semibold ">LIVE</button>
+        //                 <button className="px-3 py-1 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-400 duration-300 font-semibold hover:scale-105">GITHUB</button>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </animated.div>
+        //  </div>
            
         );
     })}
