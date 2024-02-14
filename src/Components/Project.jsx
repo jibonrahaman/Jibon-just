@@ -31,25 +31,25 @@ function Project() {
     return (
         <section className=" max-w-container mx-auto">
             <Navbar />
-            <div className=" flex gap-x-7 ">
+            <div className=" flex gap-x-7 px-2">
             
                 <button onClick={()=>{setFilterProtfolio(skill)}} className="px-4 py-1 rounded-md hover:bg-[#2b4b65] bg-[#0171cd] text-white" >ALL</button>
 
                 <MixiButton onclick={()=>handleSubmit("REACT JS") }  text="REACT JS" />
-                <MixiButton onclick={()=>handleSubmit("TAILWIND")} text="TAILWIND" />
+                <MixiButton className="hidden md:block" onclick={()=>handleSubmit("TAILWIND")} text="TAILWIND" />
                 <MixiButton onclick={()=>handleSubmit("BOOTSTRAP")} text="BOOTSTRAP" />
              <MixiButton onclick={()=>handleSubmit("JAVASCRIPT")} text="JAVASCRIPT" />
-                <MixiButton onclick={()=>handleSubmit("DAYNAMIC")} text="DAYNAMIC" />
+                <MixiButton className="hidden md:block" onclick={()=>handleSubmit("DAYNAMIC")} text="DAYNAMIC" />
             </div>
 
-          <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mt-10 px-2 md:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {/* card design */}
     {filterProtfolio.map((item, id) => {
         return (
          <div key={id}>
                <animated.div
             style={springProps}>
-             <div  data-aos="zoom-in"   data-aos-duration="500" className="bg-white shadow-lg rounded-lg overflow-hidden h-[450px]">
+             <div  data-aos="zoom-in"   data-aos-duration="500" className="bg-white mt-8 shadow-lg rounded-lg overflow-hidden h-[480px] ">
                 <img src={item.imgs} alt={item.webName}className="w-full h-[170px] hover:scale-105 duration-500 object-cover object-center" />
                 <div className="p-6 bg-[#d9eeff] h-full">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.webName}</h2>
