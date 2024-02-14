@@ -47,6 +47,7 @@ function Project() {
     {filterProtfolio.map((item, id) => {
         return (
             <div key={id}>
+                <img src={item.imgs} alt="" />
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus repudiandae commodi voluptatem eligendi nihil velit aut ut unde sunt officiis quidem et consectetur, necessitatibus iure. Sequi suscipit iste earum!</p>
             </div>
         //  <div key={id}>
