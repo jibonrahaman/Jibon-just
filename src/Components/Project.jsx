@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
 import { useSpring, animated } from "react-spring";
+import { Link } from "react-router-dom"
 function Project() {
     const [clicked, setClicked] = useState(false);
     const [data,setData]=useState(skill)
@@ -63,7 +64,11 @@ function Project() {
              {item.redux &&   <Btn text={item.redux}/>}
                 </div>  
                     <div className="flex justify-center gap-x-6">
-                        <button className="px-3 py-1 bg-blue-400 hover:scale-105 text-white rounded-md hover:bg-blue-600 duration-300 font-semibold ">LIVE</button>
+                    <Link to={item.name == 'chitchat' ? "https://mern-2205-chitchat-chatting-app.vercel.app/" : item.name == 'Orebi' ? "https://orebi-fronted-e-commerce.vercel.app/" : item.name == "Portfolio" ? "https://my-portfolio-shahriar-ferdous.vercel.app/" : item.name == "Omah" ? "https://omah-responsive.vercel.app/" : item.name == "QuiriBox" ? "https://quriarbox-beige.vercel.app/" : item.name == "petroil" ? "https://class-32-tailwind-1st-project.vercel.app/" : item.name == "MixiTup" ? "https://mixitup-simple.vercel.app/" : item.name == "Insta" ? "https://instagram-clone-lemon-two.vercel.app/" : item.name == "Todo" ? "https://todo-javascript-three.vercel.app/" : item.name == "complex" ? "https://todo-class-29.vercel.app/" : item.name == "slider" ? "https://class-26-img-slider.vercel.app/"  }>
+                    <button className="px-3 py-1 bg-blue-400 hover:scale-105 text-white rounded-md hover:bg-blue-600 duration-300 font-semibold ">LIVE</button>
+                    </Link>
+
+                        
                         <button className="px-3 py-1 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-400 duration-300 font-semibold hover:scale-105">GITHUB</button>
                     </div>
                 </div>
